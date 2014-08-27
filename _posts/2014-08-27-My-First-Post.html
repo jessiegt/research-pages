@@ -7,10 +7,20 @@ title: material informatics
 
 img1:http://www.permafrost.ca/images/mobility-contaminates.jpg
 
+links:
+-http://google.com
+-http://github.com
 ---
 
 
 ## My heading
 
 
-![image](http://www.permafrost.ca/images/mobility-contaminates.jpg)
+[![image]({{page.img1}})](http://www.permafrost.ca/images/mobility-contaminates.jpg)
+
+
+[links]({{page.links[0]}})
+
+## 
+
+{% for link in page.links %}
